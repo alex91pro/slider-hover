@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.wrapper {
+}
+/* обязательные стили */
+
+.hvr__images {
+  display: flex; /*добавил*/
+  position: relative;
+  z-index: 0;
+}
+
+.hvr__sectors {
+  position: absolute;
+  top: 500px;
+  left: 0;
+  right: 0;
+  bottom: 250px;
+  display: flex;
+  justify-content:space-around;
+}
+
+.hvr__sector {
+
+  flex: 1 1 240px;
+  margin: 0 90px;
+
+}
+
+/* не обязательные стили */
+
+body {
+  /*width: 300px;*/
+  margin: 0 auto;
+}
+
+.images {
+  display: flex;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+}
+
+.hvr__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hvr__dot {
+  width: 5px;
+  height: 5px;
+  margin: 10px 2px 0;
+  border-radius: 50%;
+  background: #d6dbe0;
+}
+
+.hvr__dot--active {
+  background: #000;
+}
+
+/* !=======логотипы======= */
+.page{
+  position: relative;
+}
+.flex {}
+.container {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: 0px;
+  left: 20px;
+  width: 100%;
+  top: 500px;
+  height: 0;
+}
+.container a {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.container img{
+  
+  
+  width: 250px;
+  height: 250px;
+
+}
+
